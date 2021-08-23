@@ -1,0 +1,48 @@
+.white {
+  background-color: var(--lightKeyBackground);
+  box-shadow: 0 4px 0px 0 var(--grayishKeyShadow);
+  color: var(--textDark);
+}
+
+.blue {
+  background-color: var(--keyBackgroundBlue);
+  box-shadow: 0 4px 0px 0 var(--keyShadowBlue);
+  color: white;
+}
+
+.red {
+  background-color: var(--keyBackgroundRed);
+  box-shadow: 0 4px 0px 0 var(--keyShadowRed);
+  color: white;
+}
+
+.Key {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+
+  font-size: 30px;
+
+  font-family: Spartan;
+  font-weight: 700;
+
+  border-radius: 10px;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+.red:active{
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowRed);
+}
+.blue:active{
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowBlue);
+}
+.white:active{
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--grayishKeyShadow);
+}

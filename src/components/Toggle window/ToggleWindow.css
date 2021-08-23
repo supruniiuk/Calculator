@@ -1,0 +1,23 @@
+.ToggleWindow {
+  background: var(--toggleBackground);
+
+  min-width: 600px;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 30px;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.ToggleWindow div:first-child{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.ToggleWindow div:last-child{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}

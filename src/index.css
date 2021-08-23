@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --mainBackground: hsl(222, 26%, 31%);
+  --toggleBackground: hsl(223, 31%, 20%);
+  --screenBackground: hsl(224, 36%, 15%);
+  --keyBackgroundBlue: hsl(225, 21%, 49%);
+  --keyShadowBlue: hsl(224, 28%, 35%);
+  --keyBackgroundRed: hsl(6, 63%, 50%);
+  --keyShadowRed: hsl(6, 70%, 34%);
+  --lightKeyBackground: hsl(30, 25%, 89%);
+  --grayishKeyShadow: hsl(28, 16%, 65%);
+  --textDark: hsl(221, 14%, 31%);
+  --text: hsl(0, 0, 100%);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--mainBackground);
+  text-align: center;
+  font-family: Spartan;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

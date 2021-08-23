@@ -1,0 +1,20 @@
+input {
+  color: white;
+
+  min-width: 600px;
+  max-width: 600px;
+  padding: 30px;
+
+  background-color: var(--screenBackground);
+  border: none;
+  outline: none;
+
+  text-align: right;
+  font-size: 50px;
+
+  font-family: Spartan;
+  font-weight: 700;
+
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
