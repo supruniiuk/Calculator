@@ -1,7 +1,7 @@
 import Key from "../Key/Key";
 import "./ToggleWindow.css";
 
-function ToggleWindow() {
+function ToggleWindow(props) {
   return (
     <div className="ToggleWindow">
       <div>
@@ -12,15 +12,15 @@ function ToggleWindow() {
         <Key value="4" />
         <Key value="5" />
         <Key value="6" />
-        <Key value="+" />
+        <Key value="+" operation="addition" />
         <Key value="1" />
         <Key value="2" />
         <Key value="3" />
-        <Key value="-" />
+        <Key value="-" operation="subtraction" />
         <Key value="." />
         <Key value="0" />
-        <Key value="/" />
-        <Key value="x" />
+        <Key value="/" operation="division" />
+        <Key value="×" operation="multiplication" />
       </div>
       <div>
         <Key value="RESET" cls="blue" />
