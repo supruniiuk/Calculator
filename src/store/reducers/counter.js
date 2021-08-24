@@ -1,4 +1,4 @@
-import { DEL, ENTER, RESET, REMEMBER, EQUAL } from "../actionTypes";
+import { DEL, ENTER, RESET, REMEMBER, EQUAL } from "../actions/actionTypes";
 
 let mainState = {
   input: "",
