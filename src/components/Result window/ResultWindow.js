@@ -2,13 +2,12 @@ import { connect } from "react-redux";
 import "./ResultWindow.css";
 
 function ResultWindow(props) {
-  console.log("hello", props.counter);
-  return <input type="text" value={props.counter} />;
+  return <input type="text" value={props.input} />;
 }
 
 const mapStateToProps = (state) => {
   return {
-    counter: state.counter.input,
+    input: state.calculator.input,
   };
 };
 

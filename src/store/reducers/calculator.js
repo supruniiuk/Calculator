@@ -7,7 +7,7 @@ let mainState = {
   action: "",
 };
 
-export default function counter(state = mainState, action) {
+export default function calculator(state = mainState, action) {
   switch (action.type) {
     case ENTER:
       if (
@@ -47,9 +47,28 @@ export default function counter(state = mainState, action) {
       };
 
     case REMEMBER:
+      let result = 0;
+      if (state.status === true) {
+        switch (state.action) {
+          case "+":
+            result = state.remember + +state.input;
+            break;
+          case "-":
+            result = state.remember - +state.input;
+            break;
+          case "/":
+            result = state.remember / +state.input;
+            break;
+          case "×":
+            result = state.remember * +state.input;
+            break;
+          default:
+            break;
+        }
+      }
       return {
         ...state,
-        remember: +state.input,
+        remember: result ? result : +state.input,
         action: action.act,
         input: "",
         status: true,
@@ -78,6 +97,7 @@ export default function counter(state = mainState, action) {
         return {
           ...state,
           input: `${answer}`,
+          status: false,
         };
       }
 
@@ -86,3 +106,5 @@ export default function counter(state = mainState, action) {
   }
   return state;
 }
+
+function check() {}

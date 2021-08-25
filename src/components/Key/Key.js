@@ -4,13 +4,18 @@ import "./Key.css";
 
 function Key(props) {
   const inputClasses = ["Key"];
-  console.log(props);
   if (props.cls === "red") {
     inputClasses.push("red");
   } else if (props.cls === "blue") {
     inputClasses.push("blue");
   } else {
     inputClasses.push("white");
+  }
+
+  console.log(props)
+
+  if (props.action === props.value && props.status) {
+    inputClasses.push("white-active");
   }
 
   return (
@@ -37,10 +42,10 @@ function Key(props) {
 
 const mapStateToProps = (state) => {
   return {
-    counter: state.counter.input,
-    status: state.counter.status,
-    remember: state.counter.remember,
-    action: state.counter.action,
+    input: state.calculator.input,
+    status: state.calculator.status,
+    remember: state.calculator.remember,
+    action: state.calculator.action,
   };
 };
 
