@@ -1,14 +1,27 @@
-import { DEL, ENTER, RESET, REMEMBER, EQUAL } from "../actions/actionTypes";
+import {
+  DEL,
+  ENTER,
+  RESET,
+  REMEMBER,
+  EQUAL,
+  SET_THEME,
+} from "../actions/actionTypes";
 
 let mainState = {
   input: "",
   status: false,
   remember: 0,
   action: "",
+  theme: "blue-theme",
 };
 
 export default function calculator(state = mainState, action) {
   switch (action.type) {
+    case SET_THEME:
+      return {
+        ...state,
+        theme: action.theme,
+      };
     case ENTER:
       if (
         action.value !== "." &&
@@ -100,11 +113,8 @@ export default function calculator(state = mainState, action) {
           status: false,
         };
       }
-
     default:
       break;
   }
   return state;
 }
-
-function check() {}

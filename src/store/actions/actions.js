@@ -1,4 +1,4 @@
-import { DEL, ENTER, RESET, REMEMBER, EQUAL } from "./actionTypes";
+import { DEL, ENTER, RESET, REMEMBER, EQUAL, SET_THEME } from "./actionTypes";
 
 export function type(value) {
   return {
@@ -29,5 +29,12 @@ export function save(act) {
 export function equal() {
   return {
     type: EQUAL,
+  };
+}
+
+export function setTheme(theme) {
+  return {
+    type: SET_THEME,
+    theme,
   };
 }

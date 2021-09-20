@@ -1,3 +1,60 @@
 .App {
-  padding: 100px;
+  padding: 60px;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+section h5 {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.blue-theme {
+  background-color: var(--mainBackground-blue);
+}
+
+.white-theme {
+  background-color: var(--mainBackground-white);
+}
+
+.purple-theme {
+  background-color: var(--mainBackground-purple);
+}
+
+.theme {
+  min-width: 600px;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.blue-theme .theme {
+  color: white;
+}
+
+.white-theme .theme {
+  color: var(--textDark-white);
+}
+
+.purple-theme .theme {
+  color: var(--grayishKeyShadow-purple);
+}
+
+.blue-theme select {
+  background-color: var(--toggleBackground-blue);
+}
+
+.white-theme select {
+  background-color: var(--toggleBackground-white);
+}
+
+.purple-theme select {
+  background-color: var(--toggleBackground-purple);
 }

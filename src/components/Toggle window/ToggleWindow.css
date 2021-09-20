@@ -1,6 +1,4 @@
 .ToggleWindow {
-  background: var(--toggleBackground);
-
   min-width: 600px;
   max-width: 600px;
   border-radius: 10px;
@@ -15,9 +13,20 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
 }
+
 .ToggleWindow div:last-child{
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
+}
+
+.ToggleWindow.blue-theme{
+  background: var(--toggleBackground-blue);
+}
+.ToggleWindow.purple-theme{
+  background: var(--toggleBackground-purple);
+}
+.ToggleWindow.white-theme{
+  background: var(--toggleBackground-white);
 }

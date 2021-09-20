@@ -1,19 +1,99 @@
-.white {
-  background-color: var(--lightKeyBackground);
-  box-shadow: 0 4px 0px 0 var(--grayishKeyShadow);
-  color: var(--textDark);
+/* blue theme */
+.blue-theme.simple-btn {
+  background-color: var(--lightKeyBackground-blue);
+  box-shadow: 0 4px 0px 0 var(--grayishKeyShadow-blue);
+  color: var(--textDark-blue);
 }
 
-.blue {
-  background-color: var(--keyBackgroundBlue);
-  box-shadow: 0 4px 0px 0 var(--keyShadowBlue);
+.blue-theme.reset {
+  background-color: var(--keyBackgroundBlue-blue);
+  box-shadow: 0 4px 0px 0 var(--keyShadowBlue-blue);
   color: white;
 }
 
-.red {
-  background-color: var(--keyBackgroundRed);
-  box-shadow: 0 4px 0px 0 var(--keyShadowRed);
+.blue-theme.equal {
+  background-color: var(--keyBackgroundRed-blue);
+  box-shadow: 0 4px 0px 0 var(--keyShadowRed-blue);
   color: white;
+}
+
+.blue-theme.equal:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowRed-blue);
+}
+.blue-theme.reset:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowBlue-blue);
+}
+.blue-theme.simple-btn:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--grayishKeyShadow-blue);
+}
+
+/* white theme */
+
+.white-theme.simple-btn {
+  background-color: var(--lightKeyBackground-white);
+  box-shadow: 0 4px 0px 0 var(--grayishKeyShadow-white);
+  color: var(--textDark-white);
+}
+
+.white-theme.reset {
+  background-color: var(--keyBackgroundBlue-white);
+  box-shadow: 0 4px 0px 0 var(--keyShadowBlue-white);
+  color: white;
+}
+
+.white-theme.equal {
+  background-color: var(--keyBackgroundRed-white);
+  box-shadow: 0 4px 0px 0 var(--keyShadowRed-white);
+  color: white;
+}
+
+.white-theme.equal:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowRed-white);
+}
+.white-theme.reset:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowBlue-white);
+}
+.white-theme.simple-btn:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--grayishKeyShadow-white);
+}
+
+/* purple theme */
+
+.purple-theme.simple-btn {
+  background-color: var(--keyShadowRed-purple);
+  box-shadow: 0 4px 0px 0 var(--lightKeyBackground-purple);
+  color: var(--grayishKeyShadow-purple);
+}
+
+.purple-theme.reset {
+  background-color: var(--screenBackground-purple);
+  box-shadow: 0 4px 0px 0 var(--keyBackgroundBlue-purple);
+  color: white;
+}
+
+.purple-theme.equal {
+  background-color: var(--keyBackgroundRed-purple);
+  box-shadow: 0 4px 0px 0 var(--keyShadowBlue-purple);
+  color: var(--mainBackground-purple);
+}
+
+.purple-theme.equal:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowRed-purple);
+}
+.purple-theme.reset:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--keyShadowBlue-purple);
+}
+.purple-theme.simple-btn:active {
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 3px 0px 0 var(--grayishKeyShadow-purple);
 }
 
 .Key {
@@ -32,21 +112,4 @@
 button:active,
 button:focus {
   outline: none;
-}
-
-.red:active{
-  transition: all 0.1s ease 0s;
-  box-shadow: 0 3px 0px 0 var(--keyShadowRed);
-}
-.blue:active{
-  transition: all 0.1s ease 0s;
-  box-shadow: 0 3px 0px 0 var(--keyShadowBlue);
-}
-.white:active{
-  transition: all 0.1s ease 0s;
-  box-shadow: 0 3px 0px 0 var(--grayishKeyShadow);
-}
-
-.white-active{
-  background-color: hsl(30, 25%, 85%);
 }

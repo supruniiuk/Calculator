@@ -4,20 +4,16 @@ import "./Key.css";
 
 function Key(props) {
   const inputClasses = ["Key"];
-  if (props.cls === "red") {
-    inputClasses.push("red");
-  } else if (props.cls === "blue") {
-    inputClasses.push("blue");
+  inputClasses.push(props.theme);
+  if (props.cls) {
+    inputClasses.push(props.cls);
   } else {
-    inputClasses.push("white");
+    inputClasses.push("simple-btn");
   }
-
-  console.log(props)
 
   if (props.action === props.value && props.status) {
-    inputClasses.push("white-active");
+    inputClasses.push("simple-btn-active");
   }
-
   return (
     <button
       onClick={() =>
@@ -46,6 +42,7 @@ const mapStateToProps = (state) => {
     status: state.calculator.status,
     remember: state.calculator.remember,
     action: state.calculator.action,
+    theme: state.calculator.theme,
   };
 };
 

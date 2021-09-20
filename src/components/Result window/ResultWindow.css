@@ -1,11 +1,8 @@
 input {
-  color: white;
-
   min-width: 600px;
   max-width: 600px;
   padding: 30px;
 
-  background-color: var(--screenBackground);
   border: none;
   outline: none;
 
@@ -17,4 +14,17 @@ input {
 
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+#blue-theme {
+  background: var(--screenBackground-blue);
+  color: var(--text-blue);
+}
+#white-theme {
+  background: var(--screenBackground-white);
+  color: var(--textDark-white);
+}
+#purple-theme {
+  background: var(--screenBackground-purple);
+  color: var(--grayishKeyShadow-purple);
 }
